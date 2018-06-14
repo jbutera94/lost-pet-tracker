@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aCC-ui-zXF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lost Pet Tracker-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lost Pet Tracker Icon" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-Pg-Jbz">
+                                <rect key="frame" x="37" y="28" width="301" height="368.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uGd-Pg-Jbz" secondAttribute="height" multiplier="246:301" id="okQ-8d-bIN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acP-e7-UwD">
+                                <rect key="frame" x="37" y="396.5" width="301" height="51"/>
+                                <color key="backgroundColor" red="0.82614151554404147" green="0.82614151554404147" blue="0.82614151554404147" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="KKZ-Z2-H12"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFMono-Regular" family="SF Mono" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="45C-b5-u8n">
+                                <rect key="frame" x="64.5" y="455.5" width="246" height="199.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-a2-1zZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="199.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvP-48-AJp">
+                                                <rect key="frame" x="5" y="16" width="63" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <segue destination="mhh-tK-diA" kind="show" id="U1B-Ob-os1"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M33-vr-oa8">
+                                                <rect key="frame" x="10" y="87" width="52" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Report Icon" translatesAutoresizingMaskIntoConstraints="NO" id="fLM-LA-3aw">
+                                                <rect key="frame" x="17" y="27" width="42" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-SQ-7Zb">
+                                        <rect key="frame" x="82" y="0.0" width="82" height="199.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-8N-lDQ">
+                                                <rect key="frame" x="10" y="16" width="63" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <segue destination="t4l-Y6-OI2" kind="show" id="6OL-7R-ZfS"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-sP-Hsw">
+                                                <rect key="frame" x="26" y="87" width="34" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map Icon" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-Rj-uww">
+                                                <rect key="frame" x="19" y="26" width="44" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lid-f1-UAF">
+                                        <rect key="frame" x="173" y="0.0" width="73" height="199.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djM-cA-q5C">
+                                                <rect key="frame" x="5" y="16" width="63" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <segue destination="2te-p9-w0P" kind="show" id="Niu-ww-wMg"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-Z8-uTq">
+                                                <rect key="frame" x="11" y="87" width="51" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Listing Icon" translatesAutoresizingMaskIntoConstraints="NO" id="WCj-jM-s7e">
+                                                <rect key="frame" x="16" y="27" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q4o-SQ-7Zb" firstAttribute="leading" secondItem="45C-b5-u8n" secondAttribute="leading" constant="82" id="0y6-db-9jG"/>
+                                    <constraint firstAttribute="width" constant="246" id="Whn-CS-mLZ"/>
+                                    <constraint firstItem="q4o-SQ-7Zb" firstAttribute="centerX" secondItem="45C-b5-u8n" secondAttribute="centerX" id="yCw-Jp-ChA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58431372549019611" green="0.6470588235294118" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="acP-e7-UwD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="6Sc-6K-Jcv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="acP-e7-UwD" secondAttribute="trailing" constant="21" id="Fo4-J9-3Bh"/>
+                            <constraint firstItem="uGd-Pg-Jbz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="IgJ-XZ-UOh"/>
+                            <constraint firstItem="uGd-Pg-Jbz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="N6X-If-Su5"/>
+                            <constraint firstItem="acP-e7-UwD" firstAttribute="top" secondItem="uGd-Pg-Jbz" secondAttribute="bottom" id="fvu-I3-COd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="45C-b5-u8n" secondAttribute="bottom" constant="12" id="g0Q-CB-gAG"/>
+                            <constraint firstItem="uGd-Pg-Jbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4T-Bi-XsN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uGd-Pg-Jbz" secondAttribute="trailing" constant="21" id="qaK-t7-BY1"/>
+                            <constraint firstItem="45C-b5-u8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t2T-ad-LrT"/>
+                            <constraint firstItem="45C-b5-u8n" firstAttribute="top" secondItem="acP-e7-UwD" secondAttribute="bottom" constant="8" symbolic="YES" id="yR3-b3-a3Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lost Pet Tracker" id="V2X-Ap-bTb"/>
+                    <connections>
+                        <outlet property="listingBtn" destination="djM-cA-q5C" id="kke-ty-s5w"/>
+                        <outlet property="mapBtn" destination="dBP-8N-lDQ" id="CYF-Tj-lCz"/>
+                        <outlet property="reportAPetBtn" destination="VvP-48-AJp" id="mRJ-FR-utK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074.375" y="138.38028169014083"/>
+        </scene>
+        <!--List of Sightings-->
+        <scene sceneID="VDU-1o-MJs">
+            <objects>
+                <tableViewController id="2te-p9-w0P" customClass="SightingsTableViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZzU-8U-nAm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SightingTableViewCell" rowHeight="90" id="oTg-Vw-YqN" customClass="SightingTableViewCell" customModule="Lost_Pet_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oTg-Vw-YqN" id="SfA-g5-Lti">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown Image Icon" translatesAutoresizingMaskIntoConstraints="NO" id="xld-Go-KZW" userLabel="Pet Photo Image View">
+                                            <rect key="frame" x="8" y="4" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance: 9 miles away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TK-Dk-rg5">
+                                            <rect key="frame" x="96" y="34" width="271" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Pet: Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzl-Cp-VMe">
+                                            <rect key="frame" x="96" y="6" width="271" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location: Blossom Hill Road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ani-Eb-5q2">
+                                            <rect key="frame" x="96" y="62" width="271" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9EG-fI-ckg">
+                                            <rect key="frame" x="38" y="34" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="distanceLabel" destination="7TK-Dk-rg5" id="A0r-l1-Xco"/>
+                                    <outlet property="petPhotoImageVIew" destination="xld-Go-KZW" id="ImE-ez-yml"/>
+                                    <outlet property="progressIndicator" destination="9EG-fI-ckg" id="y2H-yl-WUz"/>
+                                    <outlet property="timestampLabel" destination="Ani-Eb-5q2" id="wof-Ko-lAt"/>
+                                    <outlet property="typeOfPetLabel" destination="jzl-Cp-VMe" id="P4S-OO-OvK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="2te-p9-w0P" id="hkw-aq-jBe"/>
+                            <outlet property="delegate" destination="2te-p9-w0P" id="kac-ov-A0Q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="List of Sightings" id="zwk-C6-G5C"/>
+                    <connections>
+                        <outlet property="listOfSightingsTableView" destination="ZzU-8U-nAm" id="YD9-9x-U7s"/>
+                        <segue destination="0yX-Yi-aVj" kind="show" identifier="TableCellToDetailsSegue" id="eeg-Rv-WVt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jq0-8X-P6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="878.41079460269873"/>
+        </scene>
+        <!--Sighting Details-->
+        <scene sceneID="Hn9-Zg-jHn">
+            <objects>
+                <viewController storyboardIdentifier="sightingDetailsViewController" id="0yX-Yi-aVj" customClass="SightingDetailsViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bPa-Ii-HGz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vdl-GM-eAI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yrP-om-OHf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo of Dog:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-h7-wBY">
+                                <rect key="frame" x="134.5" y="37" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blossom Hill Road" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yz-SY-hd1">
+                                <rect key="frame" x="118.5" y="461" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4GM-9Y-9Nc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 miles away" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-2H-AkP">
+                                <rect key="frame" x="138.5" y="496" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q40-5V-Mkn">
+                                <rect key="frame" x="36" y="546" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.49803921568627452" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="           DIRECTIONS TO SIGHTING">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionButton:" destination="0yX-Yi-aVj" eventType="touchUpInside" id="hqm-mQ-Tgq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown Image Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Y0G-Og-Kyy">
+                                <rect key="frame" x="36" y="66" width="303" height="368"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="G6A-fd-hee">
+                                <rect key="frame" x="150" y="212" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google Maps" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-IS-92V">
+                                <rect key="frame" x="44" y="551" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1Cf-qo-byd"/>
+                                    <constraint firstAttribute="height" constant="40" id="9eb-Ka-AOc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vdl-GM-eAI" firstAttribute="top" secondItem="q40-5V-Mkn" secondAttribute="bottom" constant="71" id="1w2-M7-9jZ"/>
+                            <constraint firstItem="hWu-IS-92V" firstAttribute="leading" secondItem="yrP-om-OHf" secondAttribute="leadingMargin" constant="28" id="5kH-BC-dUu"/>
+                            <constraint firstItem="Y0G-Og-Kyy" firstAttribute="top" secondItem="bPa-Ii-HGz" secondAttribute="bottom" constant="46" id="6y5-pw-TWd"/>
+                            <constraint firstItem="q40-5V-Mkn" firstAttribute="centerX" secondItem="MOc-2H-AkP" secondAttribute="centerX" id="95g-y3-E3J"/>
+                            <constraint firstItem="MOc-2H-AkP" firstAttribute="centerX" secondItem="yrP-om-OHf" secondAttribute="centerX" id="9fR-t6-DOM"/>
+                            <constraint firstItem="q40-5V-Mkn" firstAttribute="leading" secondItem="yrP-om-OHf" secondAttribute="leadingMargin" constant="20" id="Dqx-dc-VhR"/>
+                            <constraint firstItem="Vdl-GM-eAI" firstAttribute="top" secondItem="hWu-IS-92V" secondAttribute="bottom" constant="76" id="IoN-7F-0bZ"/>
+                            <constraint firstItem="8Yz-SY-hd1" firstAttribute="top" secondItem="Y0G-Og-Kyy" secondAttribute="bottom" constant="27" id="NYg-yV-c0L"/>
+                            <constraint firstItem="q40-5V-Mkn" firstAttribute="top" secondItem="MOc-2H-AkP" secondAttribute="bottom" constant="29" id="PUp-Gf-yZp"/>
+                            <constraint firstItem="1Ku-h7-wBY" firstAttribute="top" secondItem="bPa-Ii-HGz" secondAttribute="bottom" constant="17" id="Wo4-m2-3lh"/>
+                            <constraint firstItem="8Yz-SY-hd1" firstAttribute="centerX" secondItem="MOc-2H-AkP" secondAttribute="centerX" id="di2-PU-GJy"/>
+                            <constraint firstItem="q40-5V-Mkn" firstAttribute="width" secondItem="Y0G-Og-Kyy" secondAttribute="width" id="hvX-KL-Xuv"/>
+                            <constraint firstAttribute="bottom" secondItem="8Yz-SY-hd1" secondAttribute="bottom" constant="185" id="jAQ-VE-h0w"/>
+                            <constraint firstItem="1Ku-h7-wBY" firstAttribute="centerX" secondItem="yrP-om-OHf" secondAttribute="centerX" id="jjz-b2-ycn"/>
+                            <constraint firstItem="MOc-2H-AkP" firstAttribute="top" secondItem="8Yz-SY-hd1" secondAttribute="bottom" constant="14" id="sp3-KV-Nta"/>
+                            <constraint firstItem="Y0G-Og-Kyy" firstAttribute="centerX" secondItem="yrP-om-OHf" secondAttribute="centerX" id="ujn-sw-z9D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sighting Details" id="17q-eA-1KQ"/>
+                    <connections>
+                        <outlet property="directionsBtn" destination="q40-5V-Mkn" id="qdO-Yb-n0h"/>
+                        <outlet property="distanceLabel" destination="MOc-2H-AkP" id="Zer-zZ-50x"/>
+                        <outlet property="petImage" destination="Y0G-Og-Kyy" id="aQf-b2-QQK"/>
+                        <outlet property="photoOfPetLabel" destination="1Ku-h7-wBY" id="RWU-aR-0L5"/>
+                        <outlet property="progressIndicator" destination="G6A-fd-hee" id="XGN-JY-v5k"/>
+                        <outlet property="timestampLabel" destination="8Yz-SY-hd1" id="ZTB-5h-aW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Z7-ut-xEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032.5" y="876.76056338028172"/>
+        </scene>
+        <!--Map of Sightings-->
+        <scene sceneID="OGr-vR-mDF">
+            <objects>
+                <viewController id="t4l-Y6-OI2" customClass="SightingsMapViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hae-4S-773"/>
+                        <viewControllerLayoutGuide type="bottom" id="V9L-We-bCv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZC8-7a-Rbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" title="Map of Sightings" id="gDB-G3-qHa"/>
+                    <connections>
+                        <segue destination="0yX-Yi-aVj" kind="show" identifier="MapToDetailsSegue" id="Giv-kt-L7c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w03-BR-jz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="-539"/>
+        </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="91L-EC-gge">
+            <objects>
+                <viewController id="gdw-Xl-39G" customClass="ThankYouViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QTP-DF-63d"/>
+                        <viewControllerLayoutGuide type="bottom" id="87K-ju-lAN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MkD-3X-4lO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRM-7w-Ly3">
+                                <rect key="frame" x="41" y="206" width="294" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your report can now be seen by other users who have lost their pets." textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fil-L9-PUd">
+                                <rect key="frame" x="22" y="359" width="337" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="Cfc-Yp-c5M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hX8-h5-gUP">
+                                <rect key="frame" x="127.5" y="50" width="120" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-qU-eDL">
+                                        <rect key="frame" x="28" y="28" width="64" height="64"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15399515376156617" green="0.72024457815833587" blue="0.58186055858229035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KQ0-qU-eDL" firstAttribute="centerY" secondItem="hX8-h5-gUP" secondAttribute="centerY" id="Gvb-mQ-goY"/>
+                                    <constraint firstItem="KQ0-qU-eDL" firstAttribute="centerX" secondItem="hX8-h5-gUP" secondAttribute="centerX" id="adH-z0-Zor"/>
+                                    <constraint firstAttribute="width" secondItem="hX8-h5-gUP" secondAttribute="height" multiplier="1:1" id="ql8-hf-X9z"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3Q-jQ-CGJ">
+                                <rect key="frame" x="50" y="551" width="274" height="53"/>
+                                <color key="backgroundColor" red="0.49803921568627452" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="5GW-Qq-hqF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back to Main Menu">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ZpS-Zp-Yjl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19498796064150636" green="0.88658516839378243" blue="0.4933605978448059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g3Q-jQ-CGJ" firstAttribute="leading" secondItem="MkD-3X-4lO" secondAttribute="leadingMargin" constant="34" id="CRu-SK-61t"/>
+                            <constraint firstItem="hX8-h5-gUP" firstAttribute="centerX" secondItem="MkD-3X-4lO" secondAttribute="centerX" id="DmD-Xk-box"/>
+                            <constraint firstItem="g3Q-jQ-CGJ" firstAttribute="centerX" secondItem="hX8-h5-gUP" secondAttribute="centerX" id="IEV-4i-vP1"/>
+                            <constraint firstItem="g3Q-jQ-CGJ" firstAttribute="top" secondItem="fil-L9-PUd" secondAttribute="bottom" constant="88" id="ISK-WQ-4Gf"/>
+                            <constraint firstItem="fil-L9-PUd" firstAttribute="trailing" secondItem="MkD-3X-4lO" secondAttribute="trailingMargin" id="Obp-Aq-ack"/>
+                            <constraint firstItem="87K-ju-lAN" firstAttribute="top" secondItem="g3Q-jQ-CGJ" secondAttribute="bottom" constant="63" id="Sx6-ux-7FF"/>
+                            <constraint firstItem="PRM-7w-Ly3" firstAttribute="top" secondItem="MkD-3X-4lO" secondAttribute="top" constant="206" id="VRY-Ph-61M"/>
+                            <constraint firstItem="PRM-7w-Ly3" firstAttribute="top" secondItem="hX8-h5-gUP" secondAttribute="bottom" constant="36" id="fl3-dh-uUV"/>
+                            <constraint firstItem="hX8-h5-gUP" firstAttribute="top" secondItem="QTP-DF-63d" secondAttribute="bottom" constant="30" id="mUW-JP-Fvu"/>
+                            <constraint firstItem="fil-L9-PUd" firstAttribute="leading" secondItem="MkD-3X-4lO" secondAttribute="leadingMargin" constant="6" id="wYh-Sy-MUa"/>
+                            <constraint firstItem="PRM-7w-Ly3" firstAttribute="centerX" secondItem="hX8-h5-gUP" secondAttribute="centerX" id="wiF-79-dXE"/>
+                            <constraint firstItem="PRM-7w-Ly3" firstAttribute="leading" secondItem="MkD-3X-4lO" secondAttribute="leadingMargin" constant="25" id="zaX-oY-BWp"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="checkmarkBackground" destination="hX8-h5-gUP" id="tm6-vT-CqW"/>
+                        <outlet property="mainMenuBtn" destination="g3Q-jQ-CGJ" id="T5v-jL-WNc"/>
+                        <outlet property="textLabel" destination="fil-L9-PUd" id="Rjp-yL-QcK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgh-TV-GhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750.625" y="-541.90140845070425"/>
+        </scene>
+        <!--Report A Pet-->
+        <scene sceneID="XTo-Tn-ejB">
+            <objects>
+                <viewController storyboardIdentifier="lostAPet1" id="mhh-tK-diA" customClass="ReportPetViewController" customModule="Lost_Pet_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xVf-hR-RsT"/>
+                        <viewControllerLayoutGuide type="bottom" id="zm0-YA-1Bm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yN-gg-OEa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="meb-iC-RQd">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gJm-pC-qZJ">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture of Pet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xr-Xj-RfZ">
+                                        <rect key="frame" x="110" y="0.0" width="155.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW9-ql-XjZ">
+                                        <rect key="frame" x="109.5" y="47.5" width="156" height="38"/>
+                                        <color key="backgroundColor" red="0.49803921568627452" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="RE-TAKE PHOTO">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reactivateActionSheet:" destination="mhh-tK-diA" eventType="touchUpInside" id="3XX-gb-NU1"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" image="Unknown Image Icon" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-Mp-qfo">
+                                        <rect key="frame" x="7.5" y="101.5" width="360" height="350"/>
+                                        <color key="backgroundColor" red="0.42577844166524431" green="0.62578795404935605" blue="0.91918312823834203" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Type of Pet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4i-VX-sIK">
+                                        <rect key="frame" x="122" y="467.5" width="131.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LyU-DP-LQF">
+                                        <rect key="frame" x="40" y="515" width="295" height="29"/>
+                                        <segments>
+                                            <segment title="Dog"/>
+                                            <segment title="Cat"/>
+                                            <segment title="Other"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-8J-Ejq">
+                                        <rect key="frame" x="0.0" y="559" width="375" height="68"/>
+                                        <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="geI-GZ-vUq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitBtn:" destination="mhh-tK-diA" eventType="touchUpInside" id="fGr-jh-QgD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5xr-Xj-RfZ" firstAttribute="top" secondItem="gJm-pC-qZJ" secondAttribute="top" id="D1Z-7u-fux"/>
+                                    <constraint firstAttribute="trailing" secondItem="LyU-DP-LQF" secondAttribute="trailing" constant="40" id="Tmj-2g-YMY"/>
+                                    <constraint firstAttribute="trailing" secondItem="WUM-8J-Ejq" secondAttribute="trailing" id="mCB-AO-wcf"/>
+                                    <constraint firstItem="LyU-DP-LQF" firstAttribute="leading" secondItem="gJm-pC-qZJ" secondAttribute="leading" constant="40" id="uIG-JW-utk"/>
+                                    <constraint firstItem="WUM-8J-Ejq" firstAttribute="leading" secondItem="gJm-pC-qZJ" secondAttribute="leading" id="zry-wN-GYy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJm-pC-qZJ" firstAttribute="centerX" secondItem="7yN-gg-OEa" secondAttribute="centerX" id="S1J-b8-80J"/>
+                            <constraint firstItem="zm0-YA-1Bm" firstAttribute="top" secondItem="gJm-pC-qZJ" secondAttribute="bottom" id="VEg-Yk-uVc"/>
+                            <constraint firstItem="gJm-pC-qZJ" firstAttribute="width" secondItem="7yN-gg-OEa" secondAttribute="width" id="VzU-ub-dgd"/>
+                            <constraint firstItem="gJm-pC-qZJ" firstAttribute="top" secondItem="xVf-hR-RsT" secondAttribute="bottom" constant="20" id="ewb-WD-iol"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report A Pet" id="7Sw-LO-I10"/>
+                    <connections>
+                        <outlet property="imageView" destination="JXJ-Mp-qfo" id="aoK-sz-Wme"/>
+                        <outlet property="myView" destination="7yN-gg-OEa" id="22R-yU-kcN"/>
+                        <outlet property="progress" destination="meb-iC-RQd" id="AvK-k9-MgZ"/>
+                        <outlet property="retakePicBtn" destination="aW9-ql-XjZ" id="EMu-2B-j8g"/>
+                        <outlet property="submitBtn" destination="WUM-8J-Ejq" id="qZb-fF-pgR"/>
+                        <outlet property="typeOfPetControl" destination="LyU-DP-LQF" id="osg-ki-fsK"/>
+                        <segue destination="gdw-Xl-39G" kind="show" identifier="ThankYouSegue" id="eBZ-Do-cVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnl-eO-cn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966.875" y="138.38028169014083"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fdd-f0-Xv4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCC-ui-zXF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bw0-Un-EaM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="29H-OW-gqO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jnL-He-sOv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aE-MF-WgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Checkmark" width="64" height="64"/>
+        <image name="Google Maps" width="256" height="256"/>
+        <image name="Listing Icon" width="64" height="64"/>
+        <image name="Lost Pet Tracker Icon" width="172" height="225"/>
+        <image name="Map Icon" width="64" height="64"/>
+        <image name="Report Icon" width="64" height="64"/>
+        <image name="Unknown Image Icon" width="360" height="240"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eBZ-Do-cVr"/>
+        <segue reference="eeg-Rv-WVt"/>
+        <segue reference="ZpS-Zp-Yjl"/>
+    </inferredMetricsTieBreakers>
+</document>
